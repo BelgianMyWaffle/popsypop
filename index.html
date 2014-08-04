@@ -5,14 +5,19 @@
 <script src="http://loictalhouarne.com/js/popsy.js"></script>
 <script>
 $(document).ready(function(){
-  var html="This is a message";
+	$("#buttonClick").click(function() {
+		showLightbox();
+	});
+	
+  	var html="This is a message";
 	jQuery("#testy").popsy(html, "Close", "text");
 });
 </script>
 </head>
 <body>
 <p align="center">
-<button id="testy"><font size="-2"></font></button>
+<button id="testy"><font size="-2">Pop it up</font></button>
+<a id="testy"><font size="-2"></font></a>
 </p>
 </body>
 </html>
